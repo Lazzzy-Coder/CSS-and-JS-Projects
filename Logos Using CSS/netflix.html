@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://amankrpandey1.000webhostapp.com/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX | Lazzzy Coder</title>
+    
+</head>
+<body>
+    <div class="netflix">
+        <h1>\</h1>
+        <p>NETFLIX</p>
+    </div>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        body{
+            font-family: 'Bebas Neue', cursive;
+            padding: 0%;
+            background: black;
+            margin: 0%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .netflix{
+            position: relative;
+        }
+        .netflix h1{
+            position: relative;
+            color: #e11717;
+            font-size: 16em;
+            font-weight: bolder;
+            text-shadow: 20px 0px 0px #e11717;
+            z-index: 0;
+        }
+        .netflix h1::before {
+            position: absolute;
+            content: "|";
+            left: -39px;
+            color: brown;
+            font-size: 0.71em;
+            text-shadow: 20px 0px 0px brown;
+            top: 31px;
+            z-index: -1;
+        }
+        .netflix h1::after {
+            position: absolute;
+            content: "|";
+            right: -38px;
+            bottom: 57px;
+            color: brown;
+            font-size: 0.71em;
+            text-shadow: 20px 0px 0px brown;
+            z-index: -1;
+        }
+        .netflix p {
+            position: absolute;
+            font-size: 4em;
+            color: #e11717;
+            bottom: 15%;
+            left: 50%;
+            letter-spacing: 25px;
+            transform: translateX(-42%);
+        }
+    </style>
+</body>
+</html>
