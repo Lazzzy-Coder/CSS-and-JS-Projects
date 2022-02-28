@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&display=swap');
+body{
+    all: unset;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
+}
+.buttons{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+}
+.buttons div {
+    margin: 5px 50px;
+    padding: 20px;
+    border-radius:20px ;
+    width: 25vw;
+    display: fl;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    background-color: #3d3961;
+    color: #fff;
+    cursor: pointer;
+    transition: all 100ms ease-in 2ms;
+}
+.buttons div:hover{
+    transform: scale(1.1);
+}
+.buttons div:nth-child(2){
+    background-color: #ffd283;
+    color: #000;
+}
+.buttons div:nth-child(3){
+    background-color: #e06677;
+    color: #fff;
+}
+.buttons div:nth-child(4){
+    background-color: #7c8fc9;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.demo-div,.new-div{
+    position: relative;
+    background-color:#7c8fc9 ;
+    width: 50vw;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px 20px 50px 20px;
+    overflow: hidden;
+    height: 20vh;
+    transition: all 80ms ease-in;
+}
+.demo-div::after,.new-div::after {
+    content: '';
+    width: 11%;
+    height: 28%;
+    background: #333f62;
+    position: absolute;
+    right: -4%;
+    transform: rotate(8deg);
+    bottom: -7%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+}
+button {
+     all: unset;
+    color: black;
+    padding: 15px;
+    margin: 0 20px;
+    border-radius: 10px;
+    background: #fad283;
+    font-family: 'Dosis',sans-serif;
+    cursor: pointer;
+    transition: all 80ms ease-in;
+    display: unset;
+}
+button:hover{
+    background-color: #333f62;
+    color: #fff;
+    transform: scale(1.1);
+}   
+.change-bg{
+    background-color: #e06677;
+}
+.para{
+    padding: 20px;
+    margin: 20px;
+    color: #333f62;
+    font-size: 2em;
+}
+.para{
+    padding: 20px;
+    margin: 20px;
+    color: #333f62;
+    font-size: 2em;
+}
+
+.new-div{
+    position: relative;
+    /* background-color: #fad283; */
+    color: #333f62;
+
+}
+.new-div::before{
+    content: "Hi I am a new Div";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+.disco{
+    animation: dis  400ms ease-out infinite;;
+}
+@keyframes dis{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
