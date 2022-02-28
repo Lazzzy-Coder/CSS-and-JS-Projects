@@ -5,7 +5,7 @@ Created logos using CSS.
 ![Images](./andriod.png?raw=true)
 
 # 2. Netflix
-![Images](./netflix.png?raw=true)
+![Images](./netflx.png?raw=true)
 
 Feel free to provide feedback 
 Thanks!!
