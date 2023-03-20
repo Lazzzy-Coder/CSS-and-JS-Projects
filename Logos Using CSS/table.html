@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tbl</title>
+</head>
+<body>
+    <style>td,table,th{
+        border: solid 1px green;
+        color: aqua;
+        background-color: black;
+        transition: all 2s ease;
+    }
+    th:hover,td:hover{
+        font-size: 2em;
+        color: red;
+    
+    }   
+    ol { counter-reset: item }
+li{ display: block }
+li:before { content: counters(item, ".") " "; counter-increment: item }
+    </style>
+    <table width="500" height="500" align="center" style="text-align: center;">
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            
+        </tr>
+        <tr >
+            <td rowspan="2">R1C1</td>
+            <td rowspan="1">R1C2</td>
+            <td >R1C3</td>
+            
+        </tr>
+        <tr>
+            <td>R2C2</td>
+            <td>R2C3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">R2C1</td>
+            <td>R2C2</td>
+            <td>R3C2</td>
+
+        </tr>
+        <tr>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
+        <tr>
+            <td colspan="3">R5C1</td>
+
+        </tr>
+
+    </table>
+
+    <ol>
+        <li>Program</li>
+        <li>Languages<br>
+            <ol>
+                <li>Java</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Pata Nahi</li>
+            </ol>
+        </li>
+    </ol>
+    
+</body>
+</html>
